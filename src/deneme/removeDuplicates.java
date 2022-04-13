@@ -34,6 +34,7 @@ public class removeDuplicates<arr> {
         System.out.println("sda;laskd'al;");
         System.out.println("sda;laskd'al;");
         System.out.println("sda;laskd'al;");
+        System.out.println("merhaba team3c");
     }
 }
 
