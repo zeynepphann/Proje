@@ -30,11 +30,7 @@ public class removeDuplicates<arr> {
         }
 
         System.out.println("sonuc : "  + tekrarlanan.size()); // sayi icinde ki index adedini yazdirdim
-        System.out.println("sda;laskd'al;");
-        System.out.println("sda;laskd'al;");
-        System.out.println("sda;laskd'al;");
-        System.out.println("sda;laskd'al;");
-        System.out.println("merhaba team3c");
+
     }
 }
 
