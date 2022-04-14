@@ -1,5 +1,5 @@
 package halukMarket;
 
-public class main {
+public class Main {
 
 }
