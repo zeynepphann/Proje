@@ -1,4 +1,4 @@
-package deneme;
+package Proje2;
 
 
 import java.util.ArrayList;
@@ -24,12 +24,16 @@ public class removeDuplicates<arr> {
         List<Integer> tekrarlanan = new ArrayList<>();
 
         for (Integer each : arr){
-            if (!tekrarlanan.contains(each)){ //contain ile sayi tekrarliyor mu diye kontrol ettim
+            if (!tekrarlanan.contains(each)){ //contain ile sayi tekrarliyor mu
+                                                // diye kontrol ettim
                 tekrarlanan.add(each);        // tekrar etmiyorsa ekle dedim.
             }
         }
 
-        System.out.println("sonuc : "  + tekrarlanan.size()); // sayi icinde ki index adedini yazdirdim
+        System.out.println("sonuc : "  + tekrarlanan.size());
+
+        System.out.println("merhaba team3");
+        // sayi icinde ki index adedini yazdirdim
 
     }
 }
