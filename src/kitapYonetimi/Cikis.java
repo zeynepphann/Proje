@@ -1,4 +1,4 @@
 package kitapYonetimi;
 
-public class main {
+public class Cikis {
 }
