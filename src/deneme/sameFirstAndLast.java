@@ -46,6 +46,7 @@ public class sameFirstAndLast {
         }
 
         //2 yöntem
+        System.out.println("İkinci Yöntem Sabit aray olarak");
         int [] dizi =  {1, 2, 3};
 
         System.out.println("Diziyi yazdırıyoruz-->"+dizi[0]+" "+dizi[1]+" "+dizi[2]);
@@ -53,15 +54,16 @@ public class sameFirstAndLast {
         System.out.println("Diziyi yazdırıyoruz-->"+Arrays.toString(dizi));
 
         System.out.println("Dizinin ilk elemanı-->"+dizi[0]);//ilk eleman
+
         System.out.println("Dizinin Son Elemanı-->"+dizi[dizi.length-1]); // dizinin son elemanını ulasmak
 
-        System.out.println(dizi.length);
         if(dizi.length>=0 && dizi[0]==(dizi[dizi.length-1])){
             System.out.println("True");
         }else
             System.out.println("False");
 
         //3.yöntem Arayi dinamik olusturmak
+        System.out.println("Arayi biz olusturuyoruz");
         Scanner oku = new Scanner(System.in);
         System.out.println("Diziye kaç eleman gireceksiniz");
         int a=oku.nextInt();
@@ -71,12 +73,13 @@ public class sameFirstAndLast {
         for (int i=0;i< dizi1.length;i++){
             dizi1[i]=oku.nextInt();
         }
-        //Diziyi yazdırıyoruz
-        for (int sayi:dizi1){
-            System.out.print(sayi+" ");
+        ///Diziyi yazdırıyoruz
 
-        }
         System.out.println("Diziyi yazdırıyoruz-->"+Arrays.toString(dizi1));
+        if(dizi1.length>=0 && dizi1[0]==(dizi1[dizi1.length-1])){
+            System.out.println("True");
+        }else
+            System.out.println("False");
 
 
         }
