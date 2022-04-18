@@ -48,23 +48,25 @@ public class Kitapci_Main {
             switch (secilenIslem) {
                 case 1:
                     KitapEkle.kitapEkle();
-                    Menu();
+
                     break;
                 case 2:
 
-                    Menu();
+
                     break;
                 case 3:
                     BilgiIleKitapGoruntule.bilgiIleKitapGoruntule();
-                    Menu();
+
                     break;
                 case 4:
+                    NumaraIleKitapSil.numaraIleKitapSil();
 
-                    Menu();
+
                     break;
                 case 5:
+                    TumKitaplariListele.kitapListesi();
 
-                    Menu();
+
                     break;
                     case 0:
                     Cikis.cikis();
