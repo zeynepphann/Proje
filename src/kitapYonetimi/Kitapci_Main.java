@@ -1,5 +1,7 @@
 package kitapYonetimi;
 
+import java.util.Scanner;
+
 public class Kitapci_Main {
     public static void main(String[] args) {
 
@@ -27,8 +29,54 @@ public class Kitapci_Main {
          */
         // Kitapcı_KitapEkle kitap = new Kitapcı_KitapEkle();
 
-
-
+        Menu();
 
     }
+        public static void Menu() {
+            System.out.println("Aşağıdaki işlemlerden tercih yapınız.\r\n"
+                    + "============= İŞLEMLER =============\r\n"
+                    + "     1-Kitap ekle\r\n"
+                    + "     2-Numara ile kitap goruntule\r\n"
+                    + "     3-bilgi ile kitap goruntule\r\n"
+                    + "     4-numara ile kitap sil\r\n"
+                    + "     5-tum kitaplari listele\r\n"
+                    + "     0-cikis");
+            Scanner scan = new Scanner(System.in);
+            System.out.print("islem tercihinizi giriniz : ");
+            int secilenIslem = scan.nextInt();
+
+            switch (secilenIslem) {
+                case 1:
+                    KitapEkle.kitapEkle();
+                    Menu();
+                    break;
+                case 2:
+
+                    Menu();
+                    break;
+                case 3:
+
+                    Menu();
+                    break;
+                case 4:
+
+                    Menu();
+                    break;
+                case 5:
+
+                    Menu();
+                    break;
+                    case 0:
+
+
+                    break;
+                default:
+                    System.out.println("lutfen gecerli bir islem secin");
+                    Menu();
+                    break;
+            }
+        }
+
+
+
 }
