@@ -8,7 +8,7 @@ public class BilgiIleKitapGoruntule {
 
     public static  void bilgiIleKitapGoruntule() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Kitap adini giriniz");
+
         System.out.println("Lutfen Kitap adi ile arama yapmak icin 1" +
                 "\nYazar adi ile arama yapmak icin 2" +
                 "\nKitap fiyati ile arama yapmak icin 3 e tiklayin");
@@ -27,6 +27,7 @@ public class BilgiIleKitapGoruntule {
                         System.out.println("Girdiginiz kitap adi mevcut degil");
                     }
                 }
+                break;
 
             case 2:
                 System.out.println("Yazar adini giriniz");
@@ -41,6 +42,7 @@ public class BilgiIleKitapGoruntule {
                         System.out.println("Girdiginiz yazarin kitabi mevcut degil");
                     }
                 }
+                break;
 
             case 3:
                 System.out.println("Kitap fiyatini giriniz");
@@ -55,6 +57,7 @@ public class BilgiIleKitapGoruntule {
                         System.out.println("Girdiginiz fiyatta kitabi mevcut degil");
                     }
                 }
+                break;
         }
     }
 }
