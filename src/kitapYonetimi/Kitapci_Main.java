@@ -55,7 +55,7 @@ public class Kitapci_Main {
                     Menu();
                     break;
                 case 3:
-
+                    BilgiIleKitapGoruntule.bilgiIleKitapGoruntule();
                     Menu();
                     break;
                 case 4:
@@ -67,8 +67,7 @@ public class Kitapci_Main {
                     Menu();
                     break;
                     case 0:
-
-
+                    Cikis.cikis();
                     break;
                 default:
                     System.out.println("lutfen gecerli bir islem secin");
