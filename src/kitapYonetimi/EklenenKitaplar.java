@@ -14,7 +14,7 @@ public class EklenenKitaplar {
 
 
     public EklenenKitaplar(int kitapNo, String kitapAdi, String yazarAdi, int kitapFiyati) {
-        this.kitapNo = kitapNo;
+        this.kitapNo = KitapEkle.count;
         this.kitapAdi = kitapAdi;
         this.yazarAdi = yazarAdi;
         this.kitapFiyati = kitapFiyati;

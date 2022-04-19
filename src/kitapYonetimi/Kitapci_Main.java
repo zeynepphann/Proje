@@ -48,32 +48,25 @@ public class Kitapci_Main {
             switch (secilenIslem) {
                 case 1:
                     KitapEkle.kitapEkle();
-
                     break;
                 case 2:
-
-
+                    NumaraIleKitapGoruntule.numaraIleKitapGoruntule();
                     break;
                 case 3:
                     BilgiIleKitapGoruntule.bilgiIleKitapGoruntule();
-
                     break;
                 case 4:
                     NumaraIleKitapSil.numaraIleKitapSil();
-
-
                     break;
                 case 5:
                     TumKitaplariListele.kitapListesi();
-
-
                     break;
                     case 0:
                     Cikis.cikis();
                     break;
                 default:
                     System.out.println("lutfen gecerli bir islem secin");
-                    Menu();
+                    Kitapci_Main.Menu();
                     break;
             }
         }
