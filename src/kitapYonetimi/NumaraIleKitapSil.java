@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class NumaraIleKitapSil {
 
+
     public static void numaraIleKitapSil(){
 
         boolean sil = false;
 
-        while (sil=false){
+        while (sil==false){
 
             Scanner scan= new Scanner(System.in);
             System.out.println("Lutfen silmek istediginiz kitap numarasini giriniz ");

@@ -59,10 +59,11 @@ public class Kitapci_Main {
                     Menu();
                     break;
                 case 4:
-
+                    NumaraIleKitapSil.numaraIleKitapSil();
                     Menu();
                     break;
                 case 5:
+                    TumKitaplariListele.kitapListesi();
 
                     Menu();
                     break;

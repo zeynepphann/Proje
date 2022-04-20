@@ -22,11 +22,13 @@ public class BilgiIleKitapGoruntule {
                     if (KitapEkle.kitaplar.get(i).kitapAdi.equalsIgnoreCase(secilenKitap)){
                         System.out.println("Kitap numarasi: "+KitapEkle.kitaplar.get(i).kitapNo+"\nYazar adi: "+KitapEkle.kitaplar.get(i).yazarAdi+
                                 "Kitap fiyati: "+KitapEkle.kitaplar.get(i).kitapFiyati);
+
                     }
                     else{
                         System.out.println("Girdiginiz kitap adi mevcut degil");
                     }
                 }
+
 
             case 2:
                 System.out.println("Yazar adini giriniz");
@@ -36,11 +38,13 @@ public class BilgiIleKitapGoruntule {
                     if (KitapEkle.kitaplar.get(i).yazarAdi.equalsIgnoreCase(secilenYazar)){
                         System.out.println("Kitap numarasi: "+KitapEkle.kitaplar.get(i).kitapNo+"\nKitap adi: "+KitapEkle.kitaplar.get(i).kitapAdi+
                                 "Kitap fiyati: "+KitapEkle.kitaplar.get(i).kitapFiyati);
+
                     }
                     else{
                         System.out.println("Girdiginiz yazarin kitabi mevcut degil");
                     }
                 }
+
 
             case 3:
                 System.out.println("Kitap fiyatini giriniz");
@@ -50,11 +54,13 @@ public class BilgiIleKitapGoruntule {
                     if (KitapEkle.kitaplar.get(i).kitapFiyati==secilenFiyat){
                         System.out.println("Kitap numarasi: "+KitapEkle.kitaplar.get(i).kitapNo+"\nKitap adi: "+KitapEkle.kitaplar.get(i).kitapAdi+
                                 "Yazar adi: "+KitapEkle.kitaplar.get(i).yazarAdi);
+
                     }
                     else{
                         System.out.println("Girdiginiz fiyatta kitabi mevcut degil");
                     }
                 }
+
         }
     }
 }
