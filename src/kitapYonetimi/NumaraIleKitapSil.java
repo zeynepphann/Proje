@@ -1,5 +1,6 @@
 package kitapYonetimi;
 
+
 import java.util.Scanner;
 
 public class NumaraIleKitapSil {
@@ -15,21 +16,20 @@ public class NumaraIleKitapSil {
             int silincekKitapNo=scan.nextInt();
 
             for (int i = 0; i <KitapEkle.kitaplar.size() ; i++) { // kitaplar KitapEkle class'inda oldugu icin
-                                                                  // classIsmi.deyip kitaplari cagisiyorum
+                // classIsmi.deyip kitaplari cagisiyorum
                 if (silincekKitapNo==KitapEkle.kitaplar.get(i).kitapNo){
                     KitapEkle.kitaplar.remove(KitapEkle.kitaplar.get(i));
                     System.out.println("Silme isleminiz basariyla gerceklesti");
                     sil=true;
                     break;
-                    }
                 }
-
             }
+
+        }
         if (sil=false){
             System.out.println("Gecerli bir kitap no girmediniz ");
         }
 
-        }
-
     }
 
+}
