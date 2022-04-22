@@ -17,15 +17,6 @@ public class BilgiIleKitapGoruntule {
         switch (secim) {
             case 1:
 
-                System.out.println("Kitap adini giriniz");
-                String secilenKitap = scan.nextLine();
-                for (int i = 0; i < KitapEkle.kitaplar.size(); i++) {
-                    if (KitapEkle.kitaplar.get(i).kitapAdi.equalsIgnoreCase(secilenKitap)) {
-                        System.out.println("Kitap numarasi: " + KitapEkle.kitaplar.get(i).kitapNo + "\nYazar adi: " + KitapEkle.kitaplar.get(i).yazarAdi +
-                                "Kitap fiyati: " + KitapEkle.kitaplar.get(i).kitapFiyati);
-
-                    }
-                }
                 boolean flag = true;
 
                 do {

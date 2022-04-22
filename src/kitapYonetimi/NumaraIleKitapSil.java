@@ -12,8 +12,7 @@ public class NumaraIleKitapSil {
         while (sil==false){
 
             Scanner scan= new Scanner(System.in);
-
-            System.out.println("Lutfen silmek istediginiz kitap numarasini giriniz ");
+            System.out.println("Lutfen silmek istediginiz kitap numarasini giriniz :");
             int silincekKitapNo=scan.nextInt();
 
             for (int i = 0; i <KitapEkle.kitaplar.size() ; i++) { // kitaplar KitapEkle class'inda oldugu icin
