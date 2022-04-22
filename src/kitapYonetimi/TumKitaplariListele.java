@@ -15,6 +15,7 @@ public class TumKitaplariListele {
                     ", Yazar Adı: "+ each.yazarAdi+
                     ", Fiyatı: " + each.kitapFiyati);
         }
+        Kitapci_Main.Menu();
     }
 }
 
