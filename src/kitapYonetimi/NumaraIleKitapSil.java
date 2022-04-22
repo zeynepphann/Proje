@@ -12,6 +12,7 @@ public class NumaraIleKitapSil {
         while (sil==false){
 
             Scanner scan= new Scanner(System.in);
+
             System.out.println("Lutfen silmek istediginiz kitap numarasini giriniz ");
             int silincekKitapNo=scan.nextInt();
 
@@ -22,13 +23,12 @@ public class NumaraIleKitapSil {
                     System.out.println("Silme isleminiz basariyla gerceklesti");
                     sil=true;
                     break;
-                    }
+                    }else System.out.println("Gecerli bir kitap no girmediniz");
+
                 }
 
             }
-        if (sil=false){
-            System.out.println("Gecerli bir kitap no girmediniz ");
-        }
+
 
         }
 
