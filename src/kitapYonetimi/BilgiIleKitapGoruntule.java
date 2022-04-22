@@ -17,15 +17,6 @@ public class BilgiIleKitapGoruntule {
         switch (secim) {
             case 1:
 
-                System.out.println("Kitap adini giriniz");
-                String secilenKitap = scan.nextLine();
-                for (int i = 0; i < KitapEkle.kitaplar.size(); i++) {
-                    if (KitapEkle.kitaplar.get(i).kitapAdi.equalsIgnoreCase(secilenKitap)) {
-                        System.out.println("Kitap numarasi: " + KitapEkle.kitaplar.get(i).kitapNo + "\nYazar adi: " + KitapEkle.kitaplar.get(i).yazarAdi +
-                                "Kitap fiyati: " + KitapEkle.kitaplar.get(i).kitapFiyati);
-
-                    }
-                }
                 boolean flag = true;
 
                 do {
@@ -34,21 +25,15 @@ public class BilgiIleKitapGoruntule {
                     scan.nextLine();
                     String secilenKitap1 = scan.nextLine();
 
-
                     for (EklenenKitaplar ktpAdi : KitapEkle.kitaplar) {
                         if (ktpAdi.kitapAdi.equalsIgnoreCase(secilenKitap1)) {
                             System.out.println("Kitap numarasi: " + ktpAdi.kitapNo + " \nYazar adi: " + ktpAdi.yazarAdi +
-                                    " \nKitap fiyati: " + ktpAdi.kitapFiyati);
+                                    "Kitap fiyati: " + ktpAdi.kitapFiyati);
                             adiVarMi = true;
 
                             break;
 
-                        } else adiVarMi = false;
-
-                    }
-                    if (adiVarMi == false) {
-                        System.out.println("Girdiginiz kitap adi mevcut degil");
-
+                        } else System.out.println("Girdiginiz kitap adi mevcut degil");
 
                     }
                     Kitapci_Main.Menu();
@@ -64,29 +49,16 @@ public class BilgiIleKitapGoruntule {
                     System.out.println("Yazar adini giriniz : ");
                     scan.nextLine();
                     String secilenYazar = scan.nextLine();
-                    for (EklenenKitaplar yzrAdi : KitapEkle.kitaplar) {
-                        if (yzrAdi.kitapAdi.equalsIgnoreCase(secilenYazar)) {
-                            System.out.println("Kitap numarasi: " + yzrAdi.kitapNo + " \nkitap adi: " + yzrAdi.kitapAdi +
-                                    " \nKitap fiyati: " + yzrAdi.kitapFiyati);
-                            yazarVarMi = true;
-                            break;
-                        } else yazarVarMi = false;
-
-                    }
 
                     for (int i = 0; i < KitapEkle.kitaplar.size(); i++) {
                         if (KitapEkle.kitaplar.get(i).yazarAdi.equalsIgnoreCase(secilenYazar)) {
                             System.out.println("Kitap numarasi: " + KitapEkle.kitaplar.get(i).kitapNo + "\nKitap adi: " + KitapEkle.kitaplar.get(i).kitapAdi +
-                                    "Kitap fiyati: " + KitapEkle.kitaplar.get(i).kitapFiyati);
+                                    "\nKitap fiyati: " + KitapEkle.kitaplar.get(i).kitapFiyati);
 
-                        } else {
+                        } else System.out.println("Girdiginiz yazarin kitabi mevcut degil");
 
                         }
-                    }
-                    if (yazarVarMi == false) {
 
-                        System.out.println("Girdiginiz yazarin kitabi mevcut degil");
-                    }
                     Kitapci_Main.Menu();
 
                 }while (flag1 == true) ;
@@ -99,15 +71,6 @@ public class BilgiIleKitapGoruntule {
                     boolean fiyarVarMi = false;
                     System.out.println("Kitap fiyatini giriniz");
                     int secilenFiyat = scan.nextInt();
-                    for (int i = 0; i < KitapEkle.kitaplar.size(); i++) {
-                        if (KitapEkle.kitaplar.get(i).kitapFiyati == secilenFiyat) {
-                            System.out.println("Kitap numarasi: " + KitapEkle.kitaplar.get(i).kitapNo + "\nKitap adi: " + KitapEkle.kitaplar.get(i).kitapAdi +
-                                    "Yazar adi: " + KitapEkle.kitaplar.get(i).yazarAdi);
-
-                        } else {
-                            System.out.println("Girdiginiz fiyatta kitabi mevcut degil");
-                        }
-                    }
 
                     for (int i = 0; i < KitapEkle.kitaplar.size(); i++) {
                         if (KitapEkle.kitaplar.get(i).kitapFiyati == secilenFiyat) {
