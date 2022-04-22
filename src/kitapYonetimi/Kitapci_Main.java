@@ -57,9 +57,14 @@ public class Kitapci_Main {
                     break;
                 case 4:
                     NumaraIleKitapSil.numaraIleKitapSil();
+
+                    Menu();
                     break;
+
+
                 case 5:
                     TumKitaplariListele.kitapListesi();
+
                     break;
                     case 0:
                     Cikis.cikis();
