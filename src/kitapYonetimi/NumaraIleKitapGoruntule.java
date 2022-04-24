@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class NumaraIleKitapGoruntule {
 
     public static void numaraIleKitapGoruntule(){
-<<<<<<< HEAD
-        boolean flag=true;
-=======
+
+
+
        boolean flag=true;
->>>>>>> master
+
         do {
             Scanner scan = new Scanner(System.in);
             System.out.println("lutfen goruntulemek istediginiz kitap no giriniz : ");
@@ -36,14 +36,10 @@ public class NumaraIleKitapGoruntule {
         }while(flag==true);
 
 
-<<<<<<< HEAD
-    }
-
-}
-=======
-
 
     }
 
 }
->>>>>>> master
+
+
+

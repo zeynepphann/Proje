@@ -16,21 +16,21 @@ public class KitapEkle {
             System.out.print("Kitap Ismi : ");
             String kitapIsmi = scan.nextLine();
             System.out.println();
-<<<<<<< HEAD
+
             // String a = scan.nextLine(); //dummy
-=======
+
            // String a = scan.nextLine(); //dummy
->>>>>>> master
+
             if (kitapIsmi.equals("0")) {
                 System.out.println("Iptal islemi gerceklesti.. ");
                 flag=false;
                 break;
             }
-<<<<<<< HEAD
+
             // String a = scan.nextLine(); // DUMMY
-=======
+
            // String a = scan.nextLine(); // DUMMY
->>>>>>> master
+
             System.out.print("Yazar Ismi : ");
             String yazarIsmi = scan.nextLine();
             System.out.println();
