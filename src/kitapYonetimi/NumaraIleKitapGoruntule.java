@@ -13,7 +13,7 @@ public class NumaraIleKitapGoruntule {
             boolean ktpVarMi=false;
             if (kitapNumarasi<1000){
                 System.out.println("gecerli bir numara giriniz(1000'den buyuk)");
-                flag=false;
+                ktpVarMi=false;
                 break;
             }
             for (EklenenKitaplar ktp : KitapEkle.kitaplar) {

@@ -23,7 +23,7 @@ public class Islemler {
                         + "Urun   girisi     icin --> 3 \n"
                         + "Urunu  rafa koyak  icin --> 4 \n"
                         + "Urun   cikisi   icin --> 5 \n"
-                        + "Cikis  icin --> 6");
+                        + "Cikis  icin --> 0");
         int tercih= scan.nextInt();
         switch (tercih){
             case 1:
@@ -63,8 +63,9 @@ public class Islemler {
     }
 
     private static void cikis() {
-
         System.out.println("Cikis yaptiniz");
+        System.exit(0);// swtich case de 0 girilmesine ragmen bazen kod devam ediyor bunu onlemek icin bu satiri giriyoruz
+                              // fakat bu yontemde bir binanin elektirigini kesmeye benzedigi icin tavsiye edilmiyor
     }
 
     private static void urunCikisi() {
@@ -106,7 +107,7 @@ public class Islemler {
 
             } else {
                 System.out.println("Urun bulunamadigi icin rafa kaldirilmadi");
-                urunuRafaKoy();
+
             }
         }
         baslangic();
@@ -130,8 +131,6 @@ public class Islemler {
                     System.out.println("Suanki urun miktari : "+ each.getMiktar());
                     baslangic();
                 }else System.out.println("Gecerli bir miktar giriniz. ");
-
-
 
             }else{
                 System.out.println("Gecerli bir id girin : ");
@@ -158,7 +157,7 @@ public class Islemler {
 
     public static void uruntanimlama() {
 
-        System.out.print("Urun tanimlamak icin ;\nUrunun ismi :");
+        System.out.print("*************Urun tanimlamak icin*************;\nUrunun ismi :");
         scan.nextLine();
         String urunAdi = scan.nextLine();
 
@@ -174,14 +173,10 @@ public class Islemler {
 
         DepoYonetimi obj = new DepoYonetimi(id,urunAdi,uretici,miktar,birim,raf);
         urunList.add(obj);
-        urunlerMap.put(id,urunList); // key olarak id 'yi unique deger olarak value olarak da urunList ekledik
+        urunlerMap.put(id,urunList);
         id++;
         System.out.println("\n");
         baslangic();
-
-
-
-
 
 
     }
