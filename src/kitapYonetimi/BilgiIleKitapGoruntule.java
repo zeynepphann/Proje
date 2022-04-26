@@ -28,12 +28,13 @@ public class BilgiIleKitapGoruntule {
                     for (EklenenKitaplar ktpAdi : KitapEkle.kitaplar) {
                         if (ktpAdi.kitapAdi.equalsIgnoreCase(secilenKitap1)) {
                             System.out.println("Kitap numarasi: " + ktpAdi.kitapNo + " \nYazar adi: " + ktpAdi.yazarAdi +
-                                    "Kitap fiyati: " + ktpAdi.kitapFiyati);
+                                    " \n Kitap fiyati: " + ktpAdi.kitapFiyati);
                             adiVarMi = true;
 
                             break;
 
                         } else System.out.println("Girdiginiz kitap adi mevcut degil");
+                        break;
 
                     }
                     Kitapci_Main.Menu();
@@ -54,8 +55,11 @@ public class BilgiIleKitapGoruntule {
                         if (KitapEkle.kitaplar.get(i).yazarAdi.equalsIgnoreCase(secilenYazar)) {
                             System.out.println("Kitap numarasi: " + KitapEkle.kitaplar.get(i).kitapNo + "\nKitap adi: " + KitapEkle.kitaplar.get(i).kitapAdi +
                                     "\nKitap fiyati: " + KitapEkle.kitaplar.get(i).kitapFiyati);
+                            yazarVarMi=true;
+                            break;
 
                         } else System.out.println("Girdiginiz yazarin kitabi mevcut degil");
+                        break;
 
                         }
 
