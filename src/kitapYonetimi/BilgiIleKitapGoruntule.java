@@ -46,6 +46,7 @@ public class BilgiIleKitapGoruntule {
 
             case 2:
                 boolean flag1=true;
+
                 do {
                     boolean yazarVarMi=false;
                     System.out.println("Yazar adini giriniz : ");
