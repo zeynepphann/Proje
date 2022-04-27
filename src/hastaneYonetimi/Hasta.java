@@ -6,8 +6,12 @@ import java.util.Map;
 public class Hasta extends Hastane {
 
     String hastaId;
-    static Map<Integer,VeriBankasi> hastaListesiMap= new HashMap<>();
 
+
+    public Hasta() {
+        super();
+
+    }
 
     public Hasta(String isim, String soyIsim, String hastaId) {
         super(isim, soyIsim);

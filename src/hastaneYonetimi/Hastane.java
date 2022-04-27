@@ -11,6 +11,10 @@ String soyIsim;
         this.soyIsim = soyIsim;
     }
 
+    public Hastane() {
+
+    }
+
     public String getIsim() {
         return isim;
     }
