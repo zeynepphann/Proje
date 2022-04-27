@@ -16,18 +16,26 @@ public class KitapEkle {
             System.out.print("Kitap Ismi : ");
             String kitapIsmi = scan.nextLine();
             System.out.println();
+
+            // String a = scan.nextLine(); //dummy
+
            // String a = scan.nextLine(); //dummy
+
             if (kitapIsmi.equals("0")) {
                 System.out.println("Iptal islemi gerceklesti.. ");
                 flag=false;
                 break;
             }
+
+            // String a = scan.nextLine(); // DUMMY
+
            // String a = scan.nextLine(); // DUMMY
+
             System.out.print("Yazar Ismi : ");
             String yazarIsmi = scan.nextLine();
             System.out.println();
             System.out.print("Kitap ucreti : ");
-           int kitapUcreti= scan.nextInt();
+            int kitapUcreti= scan.nextInt();
 
             EklenenKitaplar eklenenKitap =new EklenenKitaplar(count,kitapIsmi,yazarIsmi,kitapUcreti);
             kitaplar.add(eklenenKitap);

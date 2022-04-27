@@ -32,18 +32,20 @@ public class Kitapci_Main {
         Menu();
 
     }
-        public static void Menu() {
-            System.out.println("Aşağıdaki işlemlerden tercih yapınız.\r\n"
-                    + "============= İŞLEMLER =============\r\n"
-                    + "     1-Kitap ekle\r\n"
-                    + "     2-Numara ile kitap goruntule\r\n"
-                    + "     3-bilgi ile kitap goruntule\r\n"
-                    + "     4-numara ile kitap sil\r\n"
-                    + "     5-tum kitaplari listele\r\n"
-                    + "     0-cikis");
-            Scanner scan = new Scanner(System.in);
-            System.out.print("islem tercihinizi giriniz : ");
-            int secilenIslem = scan.nextInt();
+    public static void Menu() {
+        System.out.println("Aşağıdaki işlemlerden tercih yapınız.\r\n"
+                + "============= İŞLEMLER =============\r\n"
+                + "     1-Kitap ekle\r\n"
+                + "     2-Numara ile kitap goruntule\r\n"
+                + "     3-bilgi ile kitap goruntule\r\n"
+                + "     4-numara ile kitap sil\r\n"
+                + "     5-tum kitaplari listele\r\n"
+                + "     0-cikis");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("islem tercihinizi giriniz : ");
+        int secilenIslem = scan.nextInt();
+
+
 
             switch (secilenIslem) {
                 case 1:
@@ -80,8 +82,9 @@ public class Kitapci_Main {
                     Kitapci_Main.Menu();
                     break;
             }
+
         }
+    }
 
 
 
-}

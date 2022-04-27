@@ -1,15 +1,20 @@
 package kitapYonetimi;
 
+
 import java.util.Scanner;
 
 public class NumaraIleKitapSil {
 
 
-    public static void numaraIleKitapSil(){
+    public static void numaraIleKitapSil() {
 
         boolean sil = false;
 
+
+        while (sil == false) {
+
         while (sil==false) {
+
 
             Scanner scan = new Scanner(System.in);
             System.out.println("Lutfen silmek istediginiz kitap numarasini giriniz :");
@@ -23,10 +28,22 @@ public class NumaraIleKitapSil {
                     System.out.println("Silme isleminiz basariyla gerceklesti");
                     sil = true;
 
+                    break;
+                } else if (silincekKitapNo != KitapEkle.kitaplar.get(i).kitapNo) {
+                    System.out.println("Gecerli bir kitap no girmediniz");
+                    sil = false;
+                    break;
+
+
                 }
 
 
             }
+
+        }
+        if (sil = false) {
+            System.out.println("Gecerli bir kitap no girmediniz ");
+
             if (sil==false) {
                 System.out.println("Gecerli bir kitap no girmediniz");
               //  sil = false;
@@ -36,7 +53,11 @@ public class NumaraIleKitapSil {
         }
 
 
+
         }
 
+
     }
+}
+
 
