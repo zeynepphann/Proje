@@ -17,6 +17,7 @@ public class Durum {
     }
 
     public void setAktuelDurum(String aktuelDurum) {
+
         this.aktuelDurum = aktuelDurum;
     }
 

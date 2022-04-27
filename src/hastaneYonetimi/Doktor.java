@@ -7,7 +7,7 @@ import java.util.Map;
 public class Doktor extends Hastane {
 
 String doktorUnvan;
-static Map<String,VeriBankasi> doktorListesiMap= new HashMap<>();
+
 
     public Doktor(String isim, String soyIsim, String drUnvan) {
         super(isim, soyIsim);

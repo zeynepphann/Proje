@@ -1,10 +1,14 @@
 package hastaneYonetimi;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class HastaneMethod implements HastaneMetodInter {
-
+    static Map<Integer,VeriBankasi> hastaListesiMap= new HashMap<>();
+    static Map<String,VeriBankasi> doktorListesiMap= new HashMap<>();
     static Scanner scan = new Scanner(System.in);
+
 
 
     public static void giris (){
@@ -23,6 +27,37 @@ public class HastaneMethod implements HastaneMetodInter {
           yeniHastaEkle();
 
         }
+
+    }
+    public static void anaMenu(){
+        System.out.println("Asagidaki sikayetlerden size uygun olani seciniz ");
+        System.out.println("bas agris : 1 \nalerji:2\n migren : 3\n soguk alginligi : 4 \ndiyabet : 5 \nkalp hastaliklari: 6 ");
+        int scm=scan.nextInt();
+        Durum aksiyonobj =new Durum();
+        Hasta hastaobj =new Hasta();
+        VeriBankasi hastalisteobj =new VeriBankasi();
+        //hastaListesiMap.put(hastalisteobj.hastaIdleri,hastalisteobj.hastaIsimleri,hastalisteobj.hastaSoyisimleri);
+        //getter setter- mapler kontrol edilecek
+        switch (scm){
+            case 1:
+                aksiyonobj.getAktuelDurum();
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+
+        }
+
+
+
+
 
     }
 
