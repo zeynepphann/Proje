@@ -49,15 +49,19 @@ public class Kitapci_Main {
 
             switch (secilenIslem) {
                 case 1:
+                    scan.nextLine();
                     KitapEkle.kitapEkle();
                     break;
                 case 2:
+                    scan.nextLine();
                     NumaraIleKitapGoruntule.numaraIleKitapGoruntule();
                     break;
                 case 3:
+                    scan.nextLine();
                     BilgiIleKitapGoruntule.bilgiIleKitapGoruntule();
                     break;
                 case 4:
+                    scan.nextLine();
                     NumaraIleKitapSil.numaraIleKitapSil();
 
                     Menu();
@@ -65,10 +69,12 @@ public class Kitapci_Main {
 
 
                 case 5:
+                    scan.nextLine();
                     TumKitaplariListele.kitapListesi();
 
                     break;
                     case 0:
+                    scan.nextLine();
                     Cikis.cikis();
                     break;
                 default:
