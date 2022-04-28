@@ -2,8 +2,8 @@ package hastaneYonetimi;
 
 public class Hastane extends VeriBankasi {
 
-String isim;
-String soyIsim;
+protected String isim;
+protected String soyIsim;
 
 
     public Hastane(String isim, String soyIsim) {
