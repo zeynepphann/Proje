@@ -4,30 +4,42 @@ package hastaneYonetimi;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Doktor extends Hastane {
+public class Doktor {
 
-String doktorUnvan;
-static Map<String,VeriBankasi> doktorListesiMap= new HashMap<>();
+    private String doktorUnvan;
+    private String isim;
+    private String soyIsim;
 
-    public Doktor(String isim, String soyIsim, String drUnvan) {
-        super(isim, soyIsim);
-        this.doktorUnvan = drUnvan;
+    public Doktor() {
     }
 
-    public String getDrUnvan() {
+    public Doktor(String doktorUnvan, String isim, String soyIsim) {
+        this.doktorUnvan = doktorUnvan;
+        this.isim = isim;
+        this.soyIsim = soyIsim;
+    }
+
+    public String getDoktorUnvan() {
         return doktorUnvan;
     }
 
-    public void setDrUnvan(String drUnvan) {
-        this.doktorUnvan = drUnvan;
+    public void setDoktorUnvan(String doktorUnvan) {
+        this.doktorUnvan = doktorUnvan;
     }
 
-    @Override
-    public String toString() {
-        return "Doktor{" +
-                "drUnvan='" + doktorUnvan + '\'' +
-                ", isim='" + isim + '\'' +
-                ", soyIsim='" + soyIsim + '\'' +
-                "} " + super.toString();
+    public String getIsim() {
+        return isim;
+    }
+
+    public void setIsim(String isim) {
+        this.isim = isim;
+    }
+
+    public String getSoyIsim() {
+        return soyIsim;
+    }
+
+    public void setSoyIsim(String soyIsim) {
+        this.soyIsim = soyIsim;
     }
 }
