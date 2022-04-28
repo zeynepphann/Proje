@@ -3,35 +3,54 @@ package hastaneYonetimi;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Hasta extends Hastane {
+public class Hasta  {
 
-    String hastaId;
 
+    private String isim;
+    private String soyIsim;
+    private int hastaID;
+    private Durum hastaDurumu;
 
     public Hasta() {
-        super();
-
     }
 
-    public Hasta(String isim, String soyIsim, String hastaId) {
-        super(isim, soyIsim);
-        this.hastaId = hastaId;
+    public Hasta(String isim, String soyIsim, int hastaID, Durum hastaDurumu) {
+        this.isim = isim;
+        this.soyIsim = soyIsim;
+        this.hastaID = hastaID;
+        this.hastaDurumu = hastaDurumu;
     }
 
-    public String getHastaId() {
-        return hastaId;
+
+    public String getIsim() {
+        return isim;
     }
 
-    public void setHastaId(String hastaId) {
-        this.hastaId = hastaId;
+    public void setIsim(String isim) {
+        this.isim = isim;
     }
 
-    @Override
-    public String toString() {
-        return "Hasta{" +
-                "hastaId='" + hastaId + '\'' +
-                ", isim='" + isim + '\'' +
-                ", soyIsim='" + soyIsim + '\'' +
-                "} " + super.toString();
+    public String getSoyIsim() {
+        return soyIsim;
+    }
+
+    public void setSoyIsim(String soyIsim) {
+        this.soyIsim = soyIsim;
+    }
+
+    public int getHastaID() {
+        return hastaID;
+    }
+
+    public void setHastaID(int hastaID) {
+        this.hastaID = hastaID;
+    }
+
+    public Durum getHastaDurumu() {
+        return hastaDurumu;
+    }
+
+    public void setHastaDurumu(Durum hastaDurumu) {
+        this.hastaDurumu = hastaDurumu;
     }
 }
