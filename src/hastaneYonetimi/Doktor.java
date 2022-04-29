@@ -13,8 +13,12 @@ public class Doktor {
     public Doktor() {
     }
 
-    public Doktor(String doktorUnvan, String isim, String soyIsim) {
+    public Doktor(String doktorUnvan) {
         this.doktorUnvan = doktorUnvan;
+    }
+
+    public Doktor( String isim, String soyIsim) {
+
         this.isim = isim;
         this.soyIsim = soyIsim;
     }
@@ -42,4 +46,7 @@ public class Doktor {
     public void setSoyIsim(String soyIsim) {
         this.soyIsim = soyIsim;
     }
+
+
+
 }

@@ -7,41 +7,42 @@ import java.util.Scanner;
 
 public class HastaneMethod implements HastaneMetodInter {
 
-    static Map<ArrayList<Integer>,ArrayList<ArrayList<String>>> hastaListesiMap= new HashMap<>();
-    static Map<ArrayList<String>,ArrayList<ArrayList<String>>> doktorListesiMap= new HashMap<>();
+
 
     static Scanner scan = new Scanner(System.in);
 
     static Hastane hastane =new Hastane();
+    public static int hastaID=106;
 
     public static void giris (){
-
-
-       hastaListesiMap.put(hastane.hastaIdleri,hastane.hasta);
-       doktorListesiMap.put(hastane.doktorUnvanlari,hastane.doktor);
-
-        System.out.println(hastaListesiMap);
-        System.out.println(doktorListesiMap);
-
 
         System.out.println("******YILDIZ HASTANESİ ********\n******HOSGELDİNİZ********");
         System.out.println("Kayitli hasta=> 1\nYeni kayit=>2");
         int kytSecim=scan.nextInt();
         scan.nextLine();
 
+       // System.out.println(VeriBankasi.hastaListesiMap);
+        //System.out.println(VeriBankasi.doktorListesiMap);
+
         if (kytSecim==1){
             System.out.println("ID numaranizi giriniz :");
-            int girilenId= scan.nextInt();
+            hastaID= scan.nextInt();
 
-                if (hastaListesiMap.containsKey(girilenId)){
-                    System.out.println(hastaListesiMap.get(girilenId));
+
+                if (VeriBankasi.hastaListesiMap.containsKey(hastaID)){
+
+                    System.out.println(VeriBankasi.hastaListesiMap.get(hastaID));
+
                 }
+
+
 
 
             //girilen id ile bizde olan id karsilastirilacak
             //daha sonra ana memuye gonderilecek(ana menu olustur)
 
         }else if(kytSecim==2){
+
           yeniHastaEkle();
 
         }
@@ -84,17 +85,21 @@ public class HastaneMethod implements HastaneMetodInter {
     }
 
     private static void yeniHastaEkle() {
-/*
-        VeriBankasi ynhst =new VeriBankasi();
+
         System.out.println("Isim giriniz");
-        ynhst.hastaIsimleri.add(scan.nextLine());
-        scan.nextInt();
+        String isim= scan.nextLine();
+
         System.out.println("soyIsim giriniz");
-        ynhst.hastaSoyisimleri.add(scan.nextLine());
-        ynhst.hastaIdleri.add(ynhst.count++);
+        String soyIsim= scan.nextLine();
 
+        Hasta yeniKayitobj=new Hasta(isim,soyIsim);
+        Hasta yeniIdobj=new Hasta(hastaID);
 
- */
+        VeriBankasi.hastaListesiMap.put(yeniIdobj,yeniKayitobj);
+        hastaID++;
+
+        System.out.println(VeriBankasi.hastaListesiMap);
+
     }
 
 
