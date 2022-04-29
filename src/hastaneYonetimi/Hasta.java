@@ -9,15 +9,23 @@ public class Hasta  {
     private String isim;
     private String soyIsim;
     private int hastaID;
-    private Durum hastaDurumu;
+    private String hastaDurumu;
 
     public Hasta() {
     }
 
-    public Hasta(String isim, String soyIsim, int hastaID, Durum hastaDurumu) {
+    public Hasta(int hastaID) {
+        this.hastaID = hastaID;
+    }
+
+    public Hasta(String isim, String soyIsim) {
         this.isim = isim;
         this.soyIsim = soyIsim;
-        this.hastaID = hastaID;
+    }
+
+    public Hasta(String isim, String soyIsim, String hastaDurumu) {
+        this.isim = isim;
+        this.soyIsim = soyIsim;
         this.hastaDurumu = hastaDurumu;
     }
 
@@ -43,14 +51,14 @@ public class Hasta  {
     }
 
     public void setHastaID(int hastaID) {
-        this.hastaID = hastaID;
+        this.hastaID = HastaneMethod.hastaID;
     }
 
-    public Durum getHastaDurumu() {
+    public String getHastaDurumu() {
         return hastaDurumu;
     }
 
-    public void setHastaDurumu(Durum hastaDurumu) {
+    public void setHastaDurumu(String hastaDurumu) {
         this.hastaDurumu = hastaDurumu;
     }
 }
