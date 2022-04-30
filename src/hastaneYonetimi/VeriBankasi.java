@@ -22,8 +22,8 @@ public class VeriBankasi {
 
 
  */
-    static Map<Hasta,Hasta> hastaListesiMap= new HashMap<>();
-    static Map<Doktor,Doktor> doktorListesiMap= new HashMap<>();
+    public static Map<Hasta,Hasta> hastaListesiMap= new HashMap<>();
+    public static Map<Doktor,Doktor> doktorListesiMap= new HashMap<>();
 
     public static void mapOlusturma (){
         Doktor doktor1=new Doktor("Ali",  "Can");

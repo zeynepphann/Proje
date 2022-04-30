@@ -5,18 +5,16 @@ public class Doktor2 {
     private String isim;
     private String soyIsim;
 
-    public Doktor2() {
-    }
 
-    public Doktor2(String doktorUnvan) {
+    public Doktor2(String doktorUnvan, String isim, String soyIsim) {
         this.doktorUnvan = doktorUnvan;
-    }
-
-    public Doktor2( String isim, String soyIsim) {
-
         this.isim = isim;
         this.soyIsim = soyIsim;
     }
+
+    public Doktor2() {
+    }
+
 
     public String getDoktorUnvan() {
         return doktorUnvan;
@@ -40,5 +38,14 @@ public class Doktor2 {
 
     public void setSoyIsim(String soyIsim) {
         this.soyIsim = soyIsim;
+    }
+
+    @Override
+    public String toString() {
+        return "Doktor{" +
+                "doktorUnvan='" + doktorUnvan + '\'' +
+                ", isim='" + isim + '\'' +
+                ", soyIsim='" + soyIsim + '\'' +
+                '}';
     }
 }

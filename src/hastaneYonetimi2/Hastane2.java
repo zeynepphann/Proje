@@ -1,6 +1,8 @@
 package hastaneYonetimi2;
 
 public class Hastane2 extends VeriBankasi2{
+
+
     protected String isim;
     protected String soyIsim;
 
@@ -28,5 +30,14 @@ public class Hastane2 extends VeriBankasi2{
 
     public void setSoyIsim(String soyIsim) {
         this.soyIsim = soyIsim;
+    }
+
+    @Override
+    public String toString() {
+        return "Hastane{" +
+                "isim='" + isim + '\'' +
+                ", soyIsim='" + soyIsim + '\'' +
+                ", count=" + count +
+                "} " + super.toString();
     }
 }

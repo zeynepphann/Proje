@@ -23,6 +23,13 @@ public class Doktor {
         this.soyIsim = soyIsim;
     }
 
+    public Doktor(String doktorUnvan, String isim, String soyIsim) {
+        this.doktorUnvan = doktorUnvan;
+        this.isim = isim;
+        this.soyIsim = soyIsim;
+    }
+
+
     public String getDoktorUnvan() {
         return doktorUnvan;
     }

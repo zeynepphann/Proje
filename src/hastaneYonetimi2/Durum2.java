@@ -1,6 +1,7 @@
 package hastaneYonetimi2;
 
-public class Durum2 {  private String aktuelDurum;
+public class Durum2 {
+    private String aktuelDurum;
     private boolean aciliyet;
 
     public Durum2() {
@@ -17,7 +18,7 @@ public class Durum2 {  private String aktuelDurum;
 
     public void setAktuelDurum(String aktuelDurum) {
 
-        this.aktuelDurum = aktuelDurum;
+        this.aktuelDurum = HastaneMethod2.durum;
     }
 
     public boolean isAciliyet() {
