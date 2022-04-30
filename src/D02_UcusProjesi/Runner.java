@@ -1,20 +1,7 @@
-package hastaneYonetimi;
+package D02_UcusProjesi;
 
 public class Runner {
-
     public static void main(String[] args) {
-
-
-HastaneMethod.giris();
-
-
-
-
-
-
-
-
-
-
+        Methods.biletAlma();
     }
 }
