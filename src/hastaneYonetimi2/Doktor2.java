@@ -1,32 +1,18 @@
-package hastaneYonetimi;
+package hastaneYonetimi2;
 
-
-import java.util.HashMap;
-import java.util.Map;
-
-public class Doktor {
-
+public class Doktor2 {
     private String doktorUnvan;
     private String isim;
     private String soyIsim;
 
-    public Doktor() {
-    }
 
-    public Doktor(String doktorUnvan) {
-        this.doktorUnvan = doktorUnvan;
-    }
-
-    public Doktor( String isim, String soyIsim) {
-
-        this.isim = isim;
-        this.soyIsim = soyIsim;
-    }
-
-    public Doktor(String doktorUnvan, String isim, String soyIsim) {
+    public Doktor2(String doktorUnvan, String isim, String soyIsim) {
         this.doktorUnvan = doktorUnvan;
         this.isim = isim;
         this.soyIsim = soyIsim;
+    }
+
+    public Doktor2() {
     }
 
 
@@ -54,6 +40,11 @@ public class Doktor {
         this.soyIsim = soyIsim;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Doktor" +
+                "doktorUnvan='" + doktorUnvan + '\'' +
+                ", isim='" + isim + '\'' +
+                ", soyIsim='" + soyIsim + '\'' ;
+    }
 }

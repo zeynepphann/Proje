@@ -1,34 +1,22 @@
-package hastaneYonetimi;
+package hastaneYonetimi2;
 
-import java.util.HashMap;
-import java.util.Map;
+import hastaneYonetimi.HastaneMethod;
 
-public class Hasta  {
-
+public class Hasta2 {
 
     private String isim;
     private String soyIsim;
     private int hastaID;
     private String hastaDurumu;
 
-    public Hasta() {
+    public Hasta2() {
     }
 
-    public Hasta(int hastaID) {
-        this.hastaID = hastaID;
-    }
-
-    public Hasta(String isim, String soyIsim) {
-        this.isim = isim;
-        this.soyIsim = soyIsim;
-    }
-
-    public Hasta(String isim, String soyIsim, String hastaDurumu) {
+    public Hasta2(String isim, String soyIsim, String hastaDurumu) {
         this.isim = isim;
         this.soyIsim = soyIsim;
         this.hastaDurumu = hastaDurumu;
     }
-
 
     public String getIsim() {
         return isim;
@@ -51,7 +39,7 @@ public class Hasta  {
     }
 
     public void setHastaID(int hastaID) {
-        this.hastaID = HastaneMethod.hastaID;
+        this.hastaID = hastaID;
     }
 
     public String getHastaDurumu() {
@@ -60,5 +48,12 @@ public class Hasta  {
 
     public void setHastaDurumu(String hastaDurumu) {
         this.hastaDurumu = hastaDurumu;
+    }
+
+    @Override
+    public String toString() {
+        return "Hasta :\nhastaID=" + hastaID  +
+                "\nisim='" + isim + '\'' +
+                "\nsoyIsim='" + soyIsim + '\'';
     }
 }
