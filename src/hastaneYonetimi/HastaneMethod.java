@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HastaneMethod implements HastaneMetodInter {
 
-    static Map<ArrayList<Integer>,ArrayList<ArrayList<String>>> hastaListesiMap= new HashMap<>();
+    static Map<ArrayList<String>,ArrayList<ArrayList<String>>> hastaListesiMap= new HashMap<>();
     static Map<ArrayList<String>,ArrayList<ArrayList<String>>> doktorListesiMap= new HashMap<>();
 
     static Scanner scan = new Scanner(System.in);
@@ -16,8 +16,11 @@ public class HastaneMethod implements HastaneMetodInter {
 
     public static void giris (){
 
+        for (int i = 0; i <hastane.hastaIdleri.size() ; i++) {;
+        }
 
-       hastaListesiMap.put(hastane.hastaIdleri,hastane.hasta);
+
+
        doktorListesiMap.put(hastane.doktorUnvanlari,hastane.doktor);
 
         System.out.println(hastaListesiMap);
@@ -34,7 +37,7 @@ public class HastaneMethod implements HastaneMetodInter {
             int girilenId= scan.nextInt();
 
                 if (hastaListesiMap.containsKey(girilenId)){
-                    System.out.println(hastaListesiMap.get(girilenId));
+                    System.out.println(hastaListesiMap.keySet());
                 }
 
 
