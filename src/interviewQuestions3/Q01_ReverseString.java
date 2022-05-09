@@ -28,7 +28,7 @@ public class Q01_ReverseString {
         }
 
 
-        System.out.println();
+        System.out.println("***");
 
         terstenYazdirma(str);
 
