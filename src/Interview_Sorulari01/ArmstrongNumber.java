@@ -1,6 +1,7 @@
 package Interview_Sorulari01;
 
 import java.util.*;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
@@ -15,24 +16,19 @@ public class ArmstrongNumber {
      * @return List holding resulting Armstrong number.
      */
 
-    public static List<Integer> sayilar(int sayi) {
 
-        return Stream.iterate(1, i -> ++i)
+     public static List<Integer> sayilar(int sayi) {
+       //  List<Integer> sayil=new ArrayList<>(Arrays.asList())
+
+        return Stream.iterate(1, i -> ++i)// sayiyi stringe cevirdigimiz icin intStream kullanamayiz
                 .filter(i -> i == Stream.of(String.valueOf(i).split(""))
-                        .map(Integer::valueOf)
+                        .map(Integer::valueOf)// string olan sayiyi intiger'a donusturuyor
                         .map(n -> (n*n*n))
                         .mapToInt(n -> n)
                         .sum())
                 .limit(sayi)
                 .collect(toList());
     }
-
-    public static void main(String[] args) {
-        List<Integer> sayilar = ArmstrongNumber.sayilar(5);
-        System.out.println(sayilar);
-    }
-
-
 
 
 
