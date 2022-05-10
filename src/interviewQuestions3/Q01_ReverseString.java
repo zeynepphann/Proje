@@ -35,7 +35,7 @@ public class Q01_ReverseString {
     }
 
     private static void terstenYazdirma(String str) {
-     char[] kelime=str.toCharArray();
+        char[] kelime=str.toCharArray();
         System.out.print("method kullanarak : ");
         for (int i = str.length()-1; i >=0; i--) {
 
