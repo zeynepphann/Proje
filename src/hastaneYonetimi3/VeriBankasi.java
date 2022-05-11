@@ -27,21 +27,21 @@ public class VeriBankasi {
 
 
 
-        Hasta hasta1 = new Hasta(100,"Veli", "Tan" );
-        Hasta hasta2 = new Hasta(101,"Fatma", "Şan" );
-        Hasta hasta3 = new Hasta(102,"Baris", "Savas" );
-        Hasta hasta4 = new Hasta(103,"Aleyna", "Tan" );
-        Hasta hasta5 = new Hasta(104,"Nisa", "Boya");
-        Hasta hasta6 = new Hasta(105,"Eda", "Serdem");
+        Hasta hasta1 = new Hasta(111,"Veli", "Tan" );
+        Hasta hasta2 = new Hasta(222,"Fatma", "Şan" );
+        Hasta hasta3 = new Hasta(333,"Baris", "Savas" );
+        Hasta hasta4 = new Hasta(444,"Aleyna", "Tan" );
+        Hasta hasta5 = new Hasta(555,"Nisa", "Boya");
+        Hasta hasta6 = new Hasta(666,"Eda", "Serdem");
 
 
 
-        hastaListesiMap.put(100, hasta1);
-        hastaListesiMap.put(101, hasta2);
-        hastaListesiMap.put(102, hasta3);
-        hastaListesiMap.put(103, hasta4);
-        hastaListesiMap.put(104, hasta5);
-        hastaListesiMap.put(105, hasta6);
+        hastaListesiMap.put(111, hasta1);
+        hastaListesiMap.put(222, hasta2);
+        hastaListesiMap.put(333, hasta3);
+        hastaListesiMap.put(444, hasta4);
+        hastaListesiMap.put(555, hasta5);
+        hastaListesiMap.put(666, hasta6);
 
 
     }

@@ -8,7 +8,7 @@ import static hastaneYonetimi3.VeriBankasi.hastaListesiMap;
 public class HastaneMethod {
     static VeriBankasi belirti = new VeriBankasi();
     static Scanner scan = new Scanner(System.in);
-    static int hastaId = 106;
+    static int hastaId = 666;
 
     public static void giris() {
         System.out.println("************YILDIZ HASTANESI************");
@@ -42,13 +42,15 @@ public class HastaneMethod {
         System.out.println("Lutfen isim ve soy isim giriniz ");
         String isim = scan.next().toUpperCase();
         String soyIsim = scan.next().toUpperCase();
+        hastaId+=111;
         Hasta yeniHasta = new Hasta(hastaId, isim, soyIsim);
 
         if (!hastaListesiMap.containsKey(hastaId)) {
-            hastaId++;
             hastaListesiMap.put(hastaId, yeniHasta);
             belirtiler();
         }
+
+
 
     }
 
@@ -68,7 +70,7 @@ public class HastaneMethod {
             int cikis=scan.nextInt();
 
             if (cikis==0){
-                System.out.println("Cikis yapildi");
+                System.out.println("Cikis yaptiniz ");
                 System.exit(0);
             }
 
@@ -79,6 +81,8 @@ public class HastaneMethod {
 
 
     }
+
+
 
     public static void hastaliklar() {
         scan.nextLine();

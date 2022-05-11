@@ -42,9 +42,10 @@ public class Doktor {
 
     @Override
     public String toString() {
+
         return
                 "\nBelirti=" + hastaDurum +
-                        "  Doktor ismi=" + isim  +
+                        "  Doktor ismi = %-10" + isim  +
                         "  Doktor Soy Isim=" + soyIsim +
                         "  Doktorun Bulundugu Bolum=" + unvan +
                         "  Aciliyet Durumu=" + aciliyet
