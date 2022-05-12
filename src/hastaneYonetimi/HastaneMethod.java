@@ -1,9 +1,6 @@
 package hastaneYonetimi;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class HastaneMethod implements HastaneMetodInter {
 
@@ -13,33 +10,31 @@ public class HastaneMethod implements HastaneMetodInter {
 
     static Hastane hastane =new Hastane();
     public static int hastaID=106;
+    static String durum="";
+    static Durum aktuelobj=new Durum();
 
     public static void giris (){
 
+        VeriBankasi.mapOlusturma();
         System.out.println("******YILDIZ HASTANESİ ********\n******HOSGELDİNİZ********");
         System.out.println("Kayitli hasta=> 1\nYeni kayit=>2");
         int kytSecim=scan.nextInt();
         scan.nextLine();
 
-       // System.out.println(VeriBankasi.hastaListesiMap);
-        //System.out.println(VeriBankasi.doktorListesiMap);
 
         if (kytSecim==1){
             System.out.println("ID numaranizi giriniz :");
             hastaID= scan.nextInt();
 
-
                 if (VeriBankasi.hastaListesiMap.containsKey(hastaID)){
-
-                    System.out.println(VeriBankasi.hastaListesiMap.get(hastaID));
-
+                    System.out.println(VeriBankasi.hastaListesiMap.get(hastaID).toString());
                 }
 
 
 
+              anaMenu();
 
-            //girilen id ile bizde olan id karsilastirilacak
-            //daha sonra ana memuye gonderilecek(ana menu olustur)
+
 
         }else if(kytSecim==2){
 
@@ -49,31 +44,48 @@ public class HastaneMethod implements HastaneMetodInter {
 
     }
     public static void anaMenu(){
+        HastaneMethod hastaneMethodobj=new HastaneMethod();
         System.out.println("Asagidaki sikayetlerden size uygun olani seciniz ");
-        System.out.println("bas agris : 1 \nalerji:2\n migren : 3\n soguk alginligi : 4 \ndiyabet : 5 \nkalp hastaliklari: 6 ");
+        System.out.println("bas agrisi : 1 \nalerji:2\n migren : 3\n soguk alginligi : 4 \ndiyabet : 5 \nkalp hastaliklari: 6 ");
         int scm=scan.nextInt();
-        Durum aksiyonobj =new Durum();
-        Hasta hastaobj =new Hasta();
-        VeriBankasi hastalisteobj =new VeriBankasi();
-        //hastaListesiMap.put(hastalisteobj.hastaIdleri,hastalisteobj.hastaIsimleri,hastalisteobj.hastaSoyisimleri);
-        //getter setter- mapler kontrol edilecek
 
 
 
 
         switch (scm){
             case 1:
-                aksiyonobj.getAktuelDurum();
+                durum="bas agrisi";
+                aciliyetDurumu();
+                System.out.println("Sikayetiniz icin uygun dr'a yonlendiriliyorsunuz");
+                hastaneMethodobj.doktorUnvani();
+
                 break;
             case 2:
+
+                durum="alerji";
+                aciliyetDurumu();
+                System.out.println("Sikayetiniz icin uygun dr'a yonlendiriliyorsunuz");
+
                 break;
             case 3:
+                durum="migren";
+                aciliyetDurumu();
+                System.out.println("Sikayetiniz icin uygun dr'a yonlendiriliyorsunuz");
                 break;
             case 4:
+                durum="soguk alginligi";
+                aciliyetDurumu();
+                System.out.println("Sikayetiniz icin uygun dr'a yonlendiriliyorsunuz");
                 break;
             case 5:
+                durum="diyabet";
+                aciliyetDurumu();
+                System.out.println("Sikayetiniz icin uygun dr'a yonlendiriliyorsunuz");
                 break;
             case 6:
+                durum="kalp hastaliklari";
+                aciliyetDurumu();
+                System.out.println("Sikayetiniz icin uygun dr'a yonlendiriliyorsunuz");
                 break;
 
         }
@@ -81,6 +93,16 @@ public class HastaneMethod implements HastaneMetodInter {
 
 
 
+
+    }
+
+    private static void aciliyetDurumu(){
+
+        if (durum.equalsIgnoreCase("alerji")||durum.equalsIgnoreCase("kalp hastaliklari"))
+        { aktuelobj.setAciliyet(true);
+            System.out.println("Acil durumunuzdan dolayi oncelik hakkina sahipsiniz...");}
+        else{aktuelobj.setAciliyet(false);
+        }
 
     }
 
@@ -92,10 +114,7 @@ public class HastaneMethod implements HastaneMetodInter {
         System.out.println("soyIsim giriniz");
         String soyIsim= scan.nextLine();
 
-        Hasta yeniKayitobj=new Hasta(isim,soyIsim);
-        Hasta yeniIdobj=new Hasta(hastaID);
 
-        VeriBankasi.hastaListesiMap.put(yeniIdobj,yeniKayitobj);
         hastaID++;
 
         System.out.println(VeriBankasi.hastaListesiMap);
@@ -104,7 +123,24 @@ public class HastaneMethod implements HastaneMetodInter {
 
 
     @Override
-    public void doktorUnvani() {
+    public  void doktorUnvani() {
+
+    switch(durum){
+        case "bas agrisi":
+
+            VeriBankasi.doktorListesiMap.get("Norolog");
+            break;
+        case "alerji":
+            break;
+        case "migren":
+            break;
+        case "soguk alginligi":
+            break;
+        case "diyabet":
+            break;
+        case "kalp hastaliklari":
+            break;
+    }
 
     }
 
@@ -114,7 +150,7 @@ public class HastaneMethod implements HastaneMetodInter {
     }
 
     @Override
-    public void hastaBul() {
+    public  void hastaBul() {
 
     }
 }
