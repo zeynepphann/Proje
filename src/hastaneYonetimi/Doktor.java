@@ -10,23 +10,21 @@ public class Doktor {
     private String isim;
     private String soyIsim;
 
-    public Doktor() {
-    }
-
-    public Doktor(String doktorUnvan) {
-        this.doktorUnvan = doktorUnvan;
-    }
-
-    public Doktor( String isim, String soyIsim) {
-
-        this.isim = isim;
-        this.soyIsim = soyIsim;
-    }
 
     public Doktor(String doktorUnvan, String isim, String soyIsim) {
         this.doktorUnvan = doktorUnvan;
         this.isim = isim;
         this.soyIsim = soyIsim;
+    }
+
+<<<<<<< HEAD
+    public Doktor() {
+=======
+    public Doktor(String doktorUnvan, String isim, String soyIsim) {
+        this.doktorUnvan = doktorUnvan;
+        this.isim = isim;
+        this.soyIsim = soyIsim;
+>>>>>>> master
     }
 
 
@@ -54,6 +52,12 @@ public class Doktor {
         this.soyIsim = soyIsim;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Doktor{" +
+                "doktorUnvan='" + doktorUnvan + '\'' +
+                ", isim='" + isim + '\'' +
+                ", soyIsim='" + soyIsim + '\'' +
+                '}';
+    }
 }

@@ -175,6 +175,27 @@ public class Islemler implements aracYonetimi{
 
     @Override
     public void defaultAraclar() {
+        AracOzellikleri opelBenzinOtomatik=new AracOzellikleri(101,"Astra","Opel","Benzin","Otomatik",5,150,"Musait");
+        AracOzellikleri opelBenzinManuel=new AracOzellikleri(102,"Vectra","Opel","Benzin","Manuel",5,120,"Musait");
+        AracOzellikleri hondaBenziOtomatik=new AracOzellikleri(103,"Civic","Honda","Benzin","Otomatik",5,200,"Musait");
+        AracOzellikleri fiatBenzinOtomatik=new AracOzellikleri(104,"Agea","Fiat","Benzin","Otomatik",5,300,"Musait");
+        AracOzellikleri daciaDizelManuel=new AracOzellikleri(105,"Sandero","Dacia","Dizel","Manuel",5,200,"Musait");
+        AracOzellikleri renaultBenzinOtomatik=new AracOzellikleri(106,"Megane","Renault","Benzin","Otomatik",5,300,"Musait");
+        AracOzellikleri renaultDizelOtomatik=new AracOzellikleri(107,"Fluence","Renault","Dizel","Otomatik",5,250,"Musait");
+        AracOzellikleri wosvagenBenzinOtomatik=new AracOzellikleri(108,"Passat","Wosvagen","Benzin","Otomatik",5,450,"Musait");
+        AracOzellikleri wosvagenDizelManuel=new AracOzellikleri(109,"Caddy","Wosvagen","Dizel","Manuel",5,300,"Musait");
+        AracOzellikleri wosvagenBenzinManuel=new AracOzellikleri(110,"Bora","Wosvagen","Benzin","Manuel",5,200,"Musait");
+
+        arac.put(101,opelBenzinOtomatik);
+        arac.put(102,opelBenzinManuel);
+        arac.put(103,hondaBenziOtomatik);
+        arac.put(104,fiatBenzinOtomatik);
+        arac.put(105,daciaDizelManuel);
+        arac.put(106,renaultBenzinOtomatik);
+        arac.put(107,renaultDizelOtomatik);
+        arac.put(108,wosvagenBenzinOtomatik);
+        arac.put(109,wosvagenDizelManuel);
+        arac.put(110,wosvagenBenzinManuel);
 
     }
 }

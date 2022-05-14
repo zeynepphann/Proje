@@ -30,4 +30,13 @@ protected String soyIsim;
     public void setSoyIsim(String soyIsim) {
         this.soyIsim = soyIsim;
     }
+
+    @Override
+    public String toString() {
+        return "Hastane{" +
+                "isim='" + isim + '\'' +
+                ", soyIsim='" + soyIsim + '\'' +
+                ", count=" + count +
+                "} " + super.toString();
+    }
 }

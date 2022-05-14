@@ -18,7 +18,7 @@ public class Durum {
 
     public void setAktuelDurum(String aktuelDurum) {
 
-        this.aktuelDurum = aktuelDurum;
+        this.aktuelDurum = HastaneMethod.durum;
     }
 
     public boolean isAciliyet() {
