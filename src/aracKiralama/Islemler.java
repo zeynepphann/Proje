@@ -17,7 +17,7 @@ public class Islemler implements aracYonetimi{
     //    bir şekilde tekrar kullanabiliriz
 
     int count;  //sistem başlatılırken default araç listesini sisteme kaydetmemiz gerekiyor. sisteme ilk girişte sadece
-    // 1 defa default araç listesi tanımlansın diye konulan flag
+                // 1 defa default araç listesi tanımlansın diye konulan flag
 
     int kiralamaCount;  // araç kiralama işlemleri yapılmadan müşteriye teslimi engellemek için oluşturuldu
 
@@ -144,6 +144,31 @@ public class Islemler implements aracYonetimi{
 
     @Override
     public void aracEkleme() {
+        aracListeleme();
+
+        System.out.println("Lutfen eklemek istediginiz aracin modelini giriniz");
+        String model=scanner.next();
+        System.out.println("Lutfen eklemek istediginiz aracin markasini giriniz");
+        String marka=scanner.next();
+        System.out.println("Lutfen eklemek istediginiz aracin yakit turunu giriniz");
+        String yakit=scanner.next();
+        System.out.println("Lutfen eklemek istediginiz aracin vites sayisini giriniz");
+        String vites=scanner.next();
+        System.out.println("Lutfen eklemek istediginiz aracin koltuk sayisini giriniz");
+        int koltukSayisi =scanner.nextInt();
+        String musaitlikDurumu="Musait";
+        double ucret=200;
+        aracId++;
+
+         AracOzellikleri yeniArac=new AracOzellikleri (aracId,model,marka,yakit,vites,koltukSayisi,ucret,musaitlikDurumu);
+
+
+
+
+
+
+
+
 
     }
 

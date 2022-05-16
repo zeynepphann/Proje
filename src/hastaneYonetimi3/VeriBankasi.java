@@ -6,7 +6,7 @@ import java.util.Map;
 public class VeriBankasi {
 
 
-    static Map<Integer, Hasta> hastaListesiMap = new HashMap<>();
+    public static Map<Integer, Hasta> hastaListesiMap = new HashMap<>();
     static Map<String, Doktor> doktorListesiMap = new HashMap<>();
 
     public static void map() {
